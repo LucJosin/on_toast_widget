@@ -20,20 +20,20 @@ NOTE: Fique à vontade para ajudar nas traduções
 
 ### Tópicos:
 
-* [Exemplos em Gif:](#exemplos-em-gif)
+<!-- * [Exemplos em Gif:](#exemplos-em-gif) -->
 * [Como instalar](#como-instalar)
 * [Como usar](#como-usar)
 * [Exemplo](#exemplo)
 * [Licença](#licença)
 
-## Exemplos em Gif::
+<!-- ## Exemplos em Gif::
 | <img src="https://i.imgur.com/QBtPoSj.gif" height="350"/> | <img src="https://i.imgur.com/PvTf3Zu.gif" height="350"/> | <img src="https://i.imgur.com/Mw7wZAo.gif" height="350"/> | <img src="https://i.imgur.com/9Wyj7YC.gif" height="350"/> |
 |:---:|:---:|:---:|:---:|
 | SLIDE-TOP | SLIDE-BOTTOM | ZOOM-TOP | ZOOM-BOTTOM |
 
 | <img src="https://i.imgur.com/XvKHlUZ.gif" height="350"/> | <img src="https://i.imgur.com/kywlzw9.gif" height="350"/> | <img src="https://i.imgur.com/J0RqzXR.gif" height="350"/> | <img src="https://i.imgur.com/k9QaWay.gif" height="350"/> |
 |:---:|:---:|:---:|:---:|
-| FADE-TOP | FADE-BOTTOM | SIZE-TOP | SIZE-CENTER |
+| FADE-TOP | FADE-BOTTOM | SIZE-TOP | SIZE-CENTER | -->
 
 ## Como instalar:
 Adicione o seguinte codigo para seu `pubspec.yaml`:

@@ -20,20 +20,20 @@ NOTE: Feel free to help with readme translations
 
 ### Topics:
 
-* [Gif Examples](#gif-examples)
+<!-- * [Gif Examples](#gif-examples) -->
 * [How to Install](#how-to-install)
 * [How to use](#how-to-use)
 * [Example](#example)
 * [License](#license)
 
-## Gif Examples:
+<!-- ## Gif Examples:
 | <img src="https://i.imgur.com/QBtPoSj.gif" height="350"/> | <img src="https://i.imgur.com/PvTf3Zu.gif" height="350"/> | <img src="https://i.imgur.com/Mw7wZAo.gif" height="350"/> | <img src="https://i.imgur.com/9Wyj7YC.gif" height="350"/> |
 |:---:|:---:|:---:|:---:|
 | SLIDE-TOP | SLIDE-BOTTOM | ZOOM-TOP | ZOOM-BOTTOM |
 
 | <img src="https://i.imgur.com/XvKHlUZ.gif" height="350"/> | <img src="https://i.imgur.com/kywlzw9.gif" height="350"/> | <img src="https://i.imgur.com/J0RqzXR.gif" height="350"/> | <img src="https://i.imgur.com/k9QaWay.gif" height="350"/> |
 |:---:|:---:|:---:|:---:|
-| FADE-TOP | FADE-BOTTOM | SIZE-TOP | SIZE-CENTER |
+| FADE-TOP | FADE-BOTTOM | SIZE-TOP | SIZE-CENTER | -->
 
 ## How to Install:
 Add the following code to your `pubspec.yaml`:
