@@ -1,0 +1,20 @@
+name: on_toast_widget
+description: Flutter Package used to show a custom and animated toast or snackbar Widget.
+version: 1.0.0
+# https://github.com/LucasPJS
+# author: Lucas Josino
+homepage: https://github.com/LucasPJS/on_toast_widget
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
