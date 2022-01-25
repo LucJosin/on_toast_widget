@@ -8,8 +8,8 @@
 
 ## Ajuda:
 
-**Algum problema? [Issues](https://github.com/LucasPJS/on_toast_widget/issues)** <br>
-**Alguma sugestão? [Pull request](https://github.com/LucasPJS/on_toast_widget/pulls)**
+**Algum problema? [Issues](https://github.com/LucJosin/on_toast_widget/issues)** <br>
+**Alguma sugestão? [Pull request](https://github.com/LucJosin/on_toast_widget/pulls)**
 
 ### Traduções:
 
@@ -39,7 +39,7 @@ NOTE: Fique à vontade para ajudar nas traduções
 Adicione o seguinte codigo para seu `pubspec.yaml`:
 ```yaml
 dependencies:
-  on_toast_widget: ^1.0.0
+  on_toast_widget: ^1.1.0
 ```
 
 <!-- ## Some Features:
@@ -104,6 +104,6 @@ Todos os tipos de métodos nesse plugin:
 
 ## LICENÇA:
 
-* [LICENÇA](https://github.com/LucasPJS/on_toast_widget/blob/main/LICENSE)
+* [LICENÇA](https://github.com/LucJosin/on_toast_widget/blob/main/LICENSE)
 
 > * [Voltar ao Topo](#on_toast_widget)

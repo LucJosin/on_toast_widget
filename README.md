@@ -8,8 +8,8 @@
 
 ## Help:
 
-**Any problem? [Issues](https://github.com/LucasPJS/on_toast_widget/issues)** <br>
-**Any suggestion? [Pull request](https://github.com/LucasPJS/on_toast_widget/pulls)**
+**Any problem? [Issues](https://github.com/LucJosin/on_toast_widget/issues)** <br>
+**Any suggestion? [Pull request](https://github.com/LucJosin/on_toast_widget/pulls)**
 
 ### Translations:
 
@@ -39,7 +39,7 @@ NOTE: Feel free to help with readme translations
 Add the following code to your `pubspec.yaml`:
 ```yaml
 dependencies:
-  on_toast_widget: ^1.0.0
+  on_toast_widget: ^1.1.0
 ```
 
 <!-- ## Some Features:
@@ -104,6 +104,6 @@ All types of parameters on this plugin:
 
 ## LICENSE:
 
-* [LICENSE](https://github.com/LucasPJS/on_toast_widget/blob/main/LICENSE)
+* [LICENSE](https://github.com/LucJosin/on_toast_widget/blob/main/LICENSE)
 
 > * [Back to top](#on_toast_widget)

@@ -1,3 +1,17 @@
+/*
+=============
+Author: Lucas Josino
+Github: https://github.com/LucJosin
+Website: https://lucasjosino.com/
+=============
+Plugin/Id: on_toast_widget#2
+Homepage: https://github.com/LucJosin/on_toast_widget
+Pub: https://pub.dev/packages/on_toast_widget
+License: https://github.com/LucJosin/on_toast_widget/blob/main/LICENSE
+Copyright: © 2022, Lucas Josino. All rights reserved.
+=============
+*/
+
 library on_toast_widget;
 
 import 'dart:async';

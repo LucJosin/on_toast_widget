@@ -1,10 +1,15 @@
 /*
+=============
 Author: Lucas Josino
-Github: https://github.com/LucasPJS
-Package: on_toast_widget
-Homepage: https://github.com/LucasPJS/on_toast_widget
-Copyright: © 2021, Lucas Josino. All rights reserved.
-License: https://github.com/LucasPJS/on_toast_widget/blob/main/LICENSE
+Github: https://github.com/LucJosin
+Website: https://lucasjosino.com/
+=============
+Plugin/Id: on_toast_widget#2
+Homepage: https://github.com/LucJosin/on_toast_widget
+Pub: https://pub.dev/packages/on_toast_widget
+License: https://github.com/LucJosin/on_toast_widget/blob/main/LICENSE
+Copyright: © 2022, Lucas Josino. All rights reserved.
+=============
 */
 
 part of on_toast_widget;
@@ -46,7 +51,7 @@ part of on_toast_widget;
 ///
 /// * It's important use animation [Position] based in your [EffectType] or will cause a FlutterError.
 /// * This package it's under development, any issue or suggestion,
-///   [on_toast_widget Github](https://github.com/LucasPJS/on_audio_query).
+///   [on_toast_widget Github](https://github.com/LucJosin/on_toast_widget).
 ///
 class OnToastWidget extends StatefulWidget {
   /// [effectType] the effect type that will be shown.
@@ -231,7 +236,7 @@ class OnToastWidget extends StatefulWidget {
   ///
   ///  * It's important use animation [Position] based in your [EffectType] or will cause a FlutterError.
   ///  * This package it's under development, any issue or suggestion,
-  ///   [on_toast_widget Github](https://github.com/LucasPJS/on_audio_query)
+  ///   [on_toast_widget Github](https://github.com/LucJosin/on_toast_widget)
   ///
 
   const OnToastWidget({
@@ -287,7 +292,8 @@ class OnToastWidget extends StatefulWidget {
         assert(
             child != null,
             "Cannot provide both a child and a defaultType.\n"
-            "Define a child Widget.");
+            "Define a child Widget."),
+        super(key: key);
 
   @override
   _OnToastWidgetState createState() => _OnToastWidgetState();
@@ -302,54 +308,53 @@ class _OnToastWidgetState extends State<OnToastWidget> {
     if (widget.showInInitState == true) widget.controller.forward();
 
     // Animation listener, can be controlled internally and externally.
-    widget.controller
-      ..addStatusListener(
-        (status) {
-          switch (status) {
-            // Called when animation is dismissed.
-            case AnimationStatus.dismissed:
-              // Check if something will happen when status change.
-              if (widget.onStatusDismissed != null) {
-                widget.onStatusDismissed!();
-              }
-              break;
-            // Called when animation is initializated.
-            case AnimationStatus.forward:
-              // Check if something will happen when status change.
-              if (widget.onStatusForward != null) {
-                widget.onStatusForward!();
-              }
-              break;
-            // Called when animation is reversed.
-            case AnimationStatus.reverse:
-              // Check if something will happen when status change.
-              if (widget.onStatusReverse != null) {
-                widget.onStatusReverse!();
-              }
-              break;
-            // Called when animation is completed.
-            case AnimationStatus.completed:
-              // Check if toast will automatically reverse or not.
-              if (widget.automaticallyReverse == true) {
-                // Define a duration for message.
-                Timer(widget.messageDuration!, () {
-                  setState(() {
-                    widget.controller.reverse();
-                  });
+    widget.controller.addStatusListener(
+      (status) {
+        switch (status) {
+          // Called when animation is dismissed.
+          case AnimationStatus.dismissed:
+            // Check if something will happen when status change.
+            if (widget.onStatusDismissed != null) {
+              widget.onStatusDismissed!();
+            }
+            break;
+          // Called when animation is initializated.
+          case AnimationStatus.forward:
+            // Check if something will happen when status change.
+            if (widget.onStatusForward != null) {
+              widget.onStatusForward!();
+            }
+            break;
+          // Called when animation is reversed.
+          case AnimationStatus.reverse:
+            // Check if something will happen when status change.
+            if (widget.onStatusReverse != null) {
+              widget.onStatusReverse!();
+            }
+            break;
+          // Called when animation is completed.
+          case AnimationStatus.completed:
+            // Check if toast will automatically reverse or not.
+            if (widget.automaticallyReverse == true) {
+              // Define a duration for message.
+              Timer(widget.messageDuration!, () {
+                setState(() {
+                  widget.controller.reverse();
                 });
-              }
+              });
+            }
 
-              // Check if something will happen when status change.
-              if (widget.onStatusCompleted != null) {
-                widget.onStatusCompleted!();
-              }
-              break;
-            default:
-              throw FlutterError("Value for [addStatusListener] don't exist\n"
-                  "Report this issue on [on_toast_widget] Github.");
-          }
-        },
-      );
+            // Check if something will happen when status change.
+            if (widget.onStatusCompleted != null) {
+              widget.onStatusCompleted!();
+            }
+            break;
+          default:
+            throw FlutterError("Value for [addStatusListener] don't exist\n"
+                "Report this issue on [on_toast_widget] Github.");
+        }
+      },
+    );
   }
 
   @override

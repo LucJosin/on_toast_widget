@@ -2,23 +2,31 @@ import 'package:flutter/material.dart';
 import 'package:on_toast_widget/on_toast_widget.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(
+    const MyApp(),
+  );
 }
 
 class MyApp extends StatefulWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   _MyAppState createState() => _MyAppState();
 }
 
 class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin {
-  late AnimationController _controller =
-      AnimationController(vsync: this, duration: Duration(seconds: 1));
+  // Setup [AnimationController]
+  late final AnimationController _controller = AnimationController(
+    vsync: this,
+    duration: const Duration(seconds: 1),
+  );
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("OnToastExample"),
+          title: const Text("OnToastExample"),
         ),
         body: Stack(
           children: [
@@ -27,10 +35,11 @@ class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin {
               sizePositionType: SizePositionType.TYPE_2,
               controller: _controller,
               child: Container(
-                margin: EdgeInsets.all(10),
+                margin: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
-                    color: Colors.amber,
-                    borderRadius: BorderRadius.circular(50)),
+                  color: Colors.amber,
+                  borderRadius: BorderRadius.circular(50),
+                ),
                 height: 70,
               ),
             ),
@@ -42,7 +51,7 @@ class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin {
                 onLongPress: () {
                   _controller.reverse();
                 },
-                child: Text("Something"),
+                child: const Text("Something"),
               ),
             )
           ],
