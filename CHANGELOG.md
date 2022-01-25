@@ -1,4 +1,4 @@
-## [1.0.0+1] - [01.25.2022]
+## [1.1.0] - [01.25.2022]
 ### Features
 #### on_toast_widget
 - **[Added]** a [`DART ANALYZER`](https://github.com/axel-op/dart-package-analyzer/) to `PULL_REQUEST` and `PUSH`.
